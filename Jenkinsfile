@@ -20,10 +20,5 @@ pipeline {
                 sh 'docker push vismayamaliye/flaskapp:$BUILD_NUMBER'
             }
         }
-}
-post {
-        always {
-           sh 'docker logout'
-        }
-    }
+     }
 }
